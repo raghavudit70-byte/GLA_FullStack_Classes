@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: #ffffff; 
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2> Tell me about yourself</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="what is your name" required>
+
+      <label for="class">Class:</label>
+      <input type="text" id="class" name="class" placeholder="Enter your class" required>
+
+      <label for="hobbies">Hobbies:</label>
+      <textarea id="hobbies" name="hobbies" rows="1" placeholder="List your hobbies"></textarea>
+
+      <label for="education">Education:</label>
+      <input type="text" id="class" name="class" placeholder="Enter your education" required>
+
+      
+        
+      
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
